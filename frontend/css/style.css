@@ -12,20 +12,9 @@ body {
   height: 100vh;
 }
 
-.site-title h1 {
-  font-weight: 400;
-  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: white;
-  font-size: 2rem;
-  margin: 0; 
-}
-
-.subtitle {
-  font-weight: 700;
-  color: white;
-  font-size: 0.75rem;
-  margin: 0;
-  text-transform: capitalize;
+.site-title img {
+  max-width: 45%;
+  max-height: 60%;
 }
 
 .container {
@@ -42,6 +31,7 @@ body {
 header {
   background-color: black;
   padding: 2em 0;
+  max-height: 17%;
   box-shadow: 0 4px 8px 0 rgba(22, 22, 22, 0.19);
 }
 
@@ -53,3 +43,31 @@ header {
     text-align: center;
   }
 }
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+} 
+
+nav li {
+  margin-left: 70px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 2em 0;
+}
+
+nav a:hover, nav a:focus {
+  color:green;
+}
+
+.active {
+  color: green;
+}
+
