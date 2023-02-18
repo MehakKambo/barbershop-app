@@ -14,7 +14,9 @@ body {
 
 .site-title img {
   max-width: 45%;
-  max-height: 60%;
+  max-height: 55%;
+  vertical-align: middle;
+  border: 0;
 }
 
 .container {
@@ -71,3 +73,34 @@ nav a:hover, nav a:focus {
   color: green;
 }
 
+@media (max-width: 675px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav li {
+    margin: 0.5em 0;
+  }
+}
+
+#home {
+  background: url(https://res.cloudinary.com/sagacity/image/upload/c_crop,h_2832,w_4256,x_0,y_0/c_limit,dpr_auto,f_auto,fl_lossy,q_80,w_1080/_DSC0597a_i6bo5s.jpg) no-repeat center fixed;
+  height: 85vh;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+
+/* Home page */
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
