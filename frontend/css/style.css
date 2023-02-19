@@ -125,3 +125,27 @@ nav a:hover, nav a:focus {
   padding-bottom: 0;
   margin: 0 0;
 }
+
+@media (max-width: 600x) {
+  .landing-text h1 {
+    font-size: 260%;
+  }
+}
+
+.btn-hire {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn-hire:hover, .btn-hire:focus {
+  background-color: darkgreen;
+}
