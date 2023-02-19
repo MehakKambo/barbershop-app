@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-
 * {
   box-sizing: border-box;
 }
@@ -30,10 +29,10 @@ body {
   justify-content: space-between;
 }
 
-header {
+header, .footer {
   background-color: black;
   padding: 2em 0;
-  max-height: 17%;
+  max-height: 17.5%;
   box-shadow: 0 4px 8px 0 rgba(22, 22, 22, 0.19);
 }
 
@@ -148,4 +147,27 @@ nav a:hover, nav a:focus {
 
 .btn-hire:hover, .btn-hire:focus {
   background-color: darkgreen;
+}
+
+@media (max-width: 800px) {
+    .btn-hire {
+      padding: 8px 16px;    
+    }
+}
+
+#hr-main {
+  width: 100px;
+  height: 5px;
+  border-radius: 1rem;
+  background-color: white;
+  margin-bottom: 6px;
+}
+
+.copyright, .hours {
+  text-align: center;
+  color: white;
+}
+
+.copyright a {
+  color: white;
 }
