@@ -104,3 +104,24 @@ nav a:hover, nav a:focus {
   justify-content: center;
   flex-direction: column;
 }
+
+.landing-text {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.landing-text h3 {
+  font-weight: 700;
+  color: white;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.landing-text h1 {
+  font-size: 450%;
+  font-weight: 700;
+  color: white;   
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-bottom: 0;
+  margin: 0 0;
+}
