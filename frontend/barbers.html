@@ -3,6 +3,7 @@
 <head>
     <title>Dapper Dudes</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/index.js"></script>
 </head>
 <body>
@@ -32,7 +33,7 @@
 	<main>
 		<body>
 			<div class="intro">
-				<h1>Barbers</h1>
+				<h1><u>Barbers</u></h1>
 				<p>
 					We have an incredible team of barbers at Dapper Dudes! They can cover virtually any<br> 
 					request whatever the type of hair, style, or fashion. We look forward to your next visit!
@@ -40,118 +41,130 @@
 			</div>
 			
 			<div class="flip-card-grid">
-				<div class="flip-card">
+				<div class="flip-card" id="flip-card1" onclick="flipCard('flip-card1')">
 					<div class="flip-card-inner">
 						<div class="flip-card-front">
-							<h2>Card 1</h2>
-							<p>Front of card 1.</p>
+							<h3>Adien Smith</h3>
+							<p>#21</p>
+							<img src="img/gm.png" width="120">
+							<p>Career Stats: 15813</p>
+							<a href="mailto:johndoe@gmail.com" target="_blank">
+								adien@gmail.com
+							</a><br><br>
+							<a href="https://www.instagram.com/" style="color: black">
+								<i class="fa fa-instagram"></i>
+							</a>
+							<a href="https://www.facebook.com/" style="color: black; margin-left: 15px">
+								<i class="fa fa-facebook"></i>
+							</a><br>
+							<p class="services" style="color: green;"><u>Services</u></p>
 						</div>
 						<div class="flip-card-back">
-							<h2>Card 1</h2>
+							<h2>Services</h2>
 							<p>Back of card 1.</p>
 						</div>
 					</div>
 				</div>
 		
-				<div class="flip-card">
+				<div class="flip-card" id="flip-card2" onclick="flipCard('flip-card2')">
 					<div class="flip-card-inner">
 						<div class="flip-card-front">
-							<h2>Card 2</h2>
+							<h2>Laim Garcia</h2>
 							<p>Front of card 2.</p>
 						</div>
 						<div class="flip-card-back">
-							<h2>Card 2</h2>
+							<h2>Services</h2>
 							<p>Back of card 2.</p>
 						</div>
 					</div>
 				</div>
 		
-				<div class="flip-card">
+				<div class="flip-card" id="flip-card3" onclick="flipCard('flip-card3')">
 					<div class="flip-card-inner">
 						<div class="flip-card-front">
-							<h2>Card 3</h2>
+							<h2>Steph Tatum</h2>
 							<p>Front of card 3.</p>
 						</div>
 						<div class="flip-card-back">
-							<h2>Card 3</h2>
+							<h2>Services</h2>
 							<p>Back of card 3.</p>
 						</div>
 					</div>
 				</div>
 		
-				<div class="flip-card">
+				<div class="flip-card" id="flip-card4" onclick="flipCard('flip-card4')">
 					<div class="flip-card-inner">
 						<div class="flip-card-front">
-							<h2>Card 4</h2>
+							<h2>Max Kellerman</h2>
 							<p>Front of card 4.</p>
 						</div>
 						<div class="flip-card-back">
-							<h2>Card 4</h2>
+							<h2>Services</h2>
 							<p>Back of card 4.</p>
 						</div>
 					</div>
 				</div>
 		
-				<div class="flip-card">
+				<div class="flip-card" id="flip-card5" onclick="flipCard('flip-card5')">
 					<div class="flip-card-inner">
 						<div class="flip-card-front">
-							<h2>Card 5</h2>
+							<h2>Steven Smith</h2>
 							<p>Front of card 5.</p>
 						</div>
 						<div class="flip-card-back">
-							<h2>Card 5</h2>
+							<h2>Services</h2>
 							<p>Back of card 5.</p>
 						</div>
 					</div>
 				</div>
 		
-				<div class="flip-card">
+				<div class="flip-card" id="flip-card6" onclick="flipCard('flip-card6')">
 					<div class="flip-card-inner">
 						<div class="flip-card-front">
-							<h2>Card 6</h2>
+							<h2>Lucas Taylor</h2>
 							<p>Front of card 6.</p>
 						</div>
 						<div class="flip-card-back">
-							<h2>Card 6</h2>
+							<h2>Services</h2>
 							<p>Back of card 6.</p>
 						</div>
 					</div>
 				</div>
 		
-				<div class="flip-card">
+				<div class="flip-card" id="flip-card7" onclick="flipCard('flip-card7')">
 					<div class="flip-card-inner">
 						<div class="flip-card-front">
-							<h2>Card 7</h2>
+							<h2>Elijah Watkins</h2>
 							<p>Front of card 7.</p>
 						</div>
 						<div class="flip-card-back">
-							<h2>Card 7</h2>
+							<h2>Services</h2>
 							<p>Back of card 7.</p>
 						</div>
 					</div>
 				</div>
 		
-				<div class="flip-card">
+				<div class="flip-card" id="flip-card8" onclick="flipCard('flip-card8')">
 					<div class="flip-card-inner">
 						<div class="flip-card-front">
-							<h2>Card 8</h2>
+							<h2>Kevin Durak</h2>
 							<p>Front of card 8.</p>
 						</div>
 						<div class="flip-card-back">
-							<h2>Card 8</h2>
+							<h2>Services</h2>
 							<p>Back of card 8.</p>
 						</div>
 					</div>
 				</div>
 
-				<div class="flip-card">
+				<div class="flip-card" id="flip-card9" onclick="flipCard('flip-card9')">
 					<div class="flip-card-inner">
 						<div class="flip-card-front">
-							<h2>Card 9</h2>
+							<h2>Anthony Simmons</h2>
 							<p>Front of card 9.</p>
 						</div>
 						<div class="flip-card-back">
-							<h2>Card 9</h2>
+							<h2>Services</h2>
 							<p>Back of card 9.</p>
 						</div>
 					</div>
