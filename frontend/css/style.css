@@ -67,6 +67,11 @@ nav li {
   margin-left: 70px;
 }
 
+nav ul li {
+  font-size: 25px;
+  padding-top: 17px;
+}
+
 nav a {
   text-decoration: none;
   color: white;
