@@ -213,7 +213,7 @@ nav a:hover, nav a:focus {
   backface-visibility: hidden;
 }
 
-.flip-card-front {
+.flip-card-front, .flip-card-back {
   color: black;
   background: url(https://tinyurl.com/4pyfyamk) center 37px no-repeat;
   background-position: center 43.5px;
@@ -232,7 +232,7 @@ nav a:hover, nav a:focus {
   width: 30px;
 }
 
-.services:hover {
+.services:hover, .back:hover {
   cursor: pointer;
 }
 
@@ -252,7 +252,28 @@ nav a:hover, nav a:focus {
   color: black;
   transform: rotateY(180deg);
 }
- 
+.flip-card-back h2 {
+  text-align: center;
+  border-bottom: none;
+  height: 40px;
+  padding-bottom: 20px;
+  z-index: 99;
+  font-weight: 900;
+  font-size: 18px;
+  margin-top: 18px;
+  text-transform: uppercase;
+}
+
+.flip-card-back ul {
+  list-style-type: disc;
+  text-align: left;
+}
+
+.flip-card-back ul li {
+  margin: 10px;
+}
+
+
 /*
   Book page css
 */
