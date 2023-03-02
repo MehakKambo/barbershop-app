@@ -71,7 +71,8 @@
 				<form action="" method="POST">
 					<h2><b><u>Get in touch!</u></b></h2>
 					<input type="text" id="name" placeholder="Your name">
-					<input type="tel" id="phone" name="phone" inputmode="numeric" placeholder="Your Phone Number">
+					<input type="text" id="phone" name="phone" onkeypress="return /[0-9]/i.test(event.key)" 
+						maxlength="10" minlength="10" placeholder="Your Phone Number">
 					<textarea name="message" id="message" cols="30" rows="6" placeholder="Your Message"></textarea>
 					<button type="submit" id="sendMessage" onclick="messageReceived()">Send</button>
 				</form>
