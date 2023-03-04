@@ -37,7 +37,7 @@
 			</p>
 		</div>
 		<div class="book">
-			<form>
+			<form action="/appointment" method="POST">
 				<label for="services">Service:</label><br>
 				<select id="services" name="services" required>
 					<option value="" selected>Select a service</option>
@@ -64,7 +64,13 @@
 					<option>Steven A. Smith</option>
 				</select><br>
 
-				<button class="next-btn" id="next">Next</button>
+				<label for="date">Date: </label>
+				<input type="date" id="date" name="date"><br><br>
+
+				<label for="time">Time: </label>
+				<input type="time" id="time" name="time"><br><br>
+
+				<button type="submit" class="next-btn" id="next">Next</button>
 			</form>
 		</div>
 	<!-- Main section ends -->
