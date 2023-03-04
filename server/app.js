@@ -5,6 +5,8 @@ var bodyParser = require('body-parser')
 const {Client} = require('pg')
 var app = express();
 var server = http.createServer(app)
+const jsdom = require("jsdom");
+const { JSDOM } = jsdom;
 
 //postgres locally hosted
 const client = new Client({
