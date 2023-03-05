@@ -147,7 +147,7 @@ nav a:hover, nav a:focus {
   }
 }
 
-.btn-hire {
+.btn-hire, .go-home {
   background-color: green;
   border: none;
   color: white;
@@ -161,7 +161,7 @@ nav a:hover, nav a:focus {
   border-radius: 3px;
 }
 
-.btn-hire:hover, .btn-hire:focus {
+.btn-hire:hover, .go-home:hover, .btn-hire:focus, .go-home:focus {
   background-color: darkgreen;
 }
 
@@ -408,6 +408,10 @@ select, textarea {
   width: 100%;
 }
 
+#customer-name, #customer-email {
+  width: 100%;
+  height: 36px;
+}
 form label {
   font-size: 1.2em;
 }

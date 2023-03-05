@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dapper Dudes</title>
+	<link rel="stylesheet" href="../../frontend/css/style.css">
+    <script defer src="../../frontend/js/index.js"></script>
+	
+</head>
+<body>
+    <!-- Header section start -->
+    <header class="header">
+        <div class="container container-nav">
+			<div class="site-title">
+				<a href="../../frontend/index.html">
+					<img src="../../frontend/img/logo.png" alt="logo" width="300" height="200">
+				</a>
+			</div>
+            <nav>
+				<ul>
+					<li><a href="../../frontend/index.html">Home</a></li>
+					<li><a class="active" href="../../frontend/book.html">Book</a></li>
+					<li><a href="../../frontend/barbers.html">Barbers</a></li>  
+					<li><a href="../../frontend/contact.html">Contact</a></li>
+				</ul>
+            </nav>
+        </div>
+    <!-- Header section ends -->
+    </header>
+	<!-- Main section begins -->
+	<main>
+		<div class="intro">
+			<h1><u>Thank You!</u></h1>
+		</div>
+		<div class="hook">
+			<h2>Appointment Details</h2>
+		</div>
+		<div class="appt-table">
+			<table>
+				<tr>
+				  <th>Service</th>
+				  <th>Barber</th>
+				  <th>Date</th>
+				  <th>Time</th>
+				  <th>Name</th>
+				  <th>Email</th>
+				</tr>
+				<tr>
+				  <td>{{service}}</td>
+				  <td>{{barber}}</td>
+				  <td>{{date}}</td>
+				  <td>{{time}}</td>
+				  <td>{{customerName}}</td>
+				  <td>{{customerEmail}}</td>
+				</tr>
+			  </table>
+		</div>
+		<div class="home-btn">
+			<a href='../../frontend/index.html' class="go-home">Go To Home</a>
+		</div>
+	<!-- Main section ends -->
+	</main>
+	<!-- Footer section begins -->
+	<footer class="footer">
+		<h3>
+			<p class="copyright">
+				<span id="demo">&copy;</span>
+				<a href="../../frontend/index.html">DapperDudes.com</a>
+
+				<p class="hours">
+					Business Hours:<br>
+					Mon - Fri: 10:00 am - 5:00 pm<br>
+					Sat - Sun: Closed
+				</p>
+        </h3>
+	<!-- Footer section ends -->
+	</footer>
+</body>
+</html>
