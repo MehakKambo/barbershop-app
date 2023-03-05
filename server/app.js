@@ -25,13 +25,11 @@ client.connect(function(err) {
 
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(express.static("../frontend"))
-const viewsPath = path.join(__dirname, '/views')
+const viewsPath = path.join(__dirname, 'views')
 
+app.engine('handlebars', exphbs.engine())
 app.set('view engine', 'handlebars')
 app.set('views', viewsPath)
-app.engine('handlebars', exphbs({
-  layoutsDir: `${__dirname}/views/layouts`
-}))
 
 app.get('/', (req, res) => {
   res.sendFile(path.resolve('../frontend/book.html'));
@@ -45,7 +43,7 @@ app.post('/appointment', (req, res) => {
   const time = req.body.time;
   const customerName = req.body.customer_name
   const customerEmail = req.body.customer_email
-  console.log(req.body)
+  //console.log(req.body)
   const check = 'SELECT id FROM appointments WHERE barber_name = $1 and date = $2 and time = $3'
   //const values = [services, barbers, date, time]
   client.query(check, [barber, date, time], (checkError, checkResult) => {
@@ -70,19 +68,15 @@ app.post('/appointment', (req, res) => {
             console.log("Data inserted successfully")
             res.status(200)
             //redirect to the confirmation page
-            const data = {
-              service: service,
-              barbers: barber,
-              date: date,
-              time: time,
+            res.render('home', {
+              service_name: service, 
+              barber_name: barber, 
+              appt_date: date, 
+              appt_time: time,  
               customer_name: customerName,
-              customer_email: customerEmail
-            }
-            res.render('main', {data})
-            //res.status(200).send("data inserted successfully")
+              customer_email: customerEmail})
            }
          });
-        // res.status(200).send("Insert can be performed")
       }
     }
   }) 
