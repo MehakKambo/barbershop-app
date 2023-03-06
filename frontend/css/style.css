@@ -490,3 +490,8 @@ button:hover, button:focus {
 .conf-hook {
   padding-bottom: 25px;
 }
+
+.appt-success {
+  text-align: left;
+  font-size: large;
+}
