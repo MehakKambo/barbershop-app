@@ -11,11 +11,11 @@ let alert = require('alert')
 
 //postgres locally hosted
 const client = new Client({
-  user: 'Mehakpreet1',
-  host: 'localhost',
-  database: 'example',
-  password: 'password',
-  port: 5432,
+  user: 'your_username',
+  host: 'your_hostname',
+  database: 'your_DB_name',
+  password: 'your_password',
+  port: 5432, //put your port number here
 })
 
 //connect to postgres
