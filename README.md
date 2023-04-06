@@ -2,6 +2,10 @@
 
 This is a web application for a barbershop. The frontend is built with pure HTML, CSS, and JavaScript, while the backend is built with Node.js and PostgreSQL.
 
+# Demo
+
+[![Barbershop Webapp Demo](https://img.youtube.com/vi/VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID_HERE)
+
 # Directory-Structure
 ```bash
 ├── frontend
@@ -46,5 +50,3 @@ Follow the instructions below to set up and run the application:
 4. After changing the PostgreSQL credentials, run the schema.sql file (present in the root directory) in your PostgreSQL to create the database and its tables. You can run the command ```\i path_to_sql_file``` in PostgreSQL, where path_to_sql_file is the path to the schema.sql file. Alternatively, you can copy, paste and run each SQL command in the schema.sql file.
 5. In the server directory, run the command node app.js. This will start the Node.js server at localhost:3000 if all the previous steps were successful.
 6. Visit ```http://localhost:3000/``` after starting the Node.js server. The website will be there, and you can perform all the scenarios. After creating an appointment, make sure you are connected to the barbershop database in PostgreSQL, and then run the command ```SELECT * FROM APPOINTMENTS;``` to see the appointment data added to the database.
-
-# Demo
