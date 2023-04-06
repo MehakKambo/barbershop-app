@@ -4,7 +4,7 @@ This is a web application for a barbershop. The frontend is built with pure HTML
 
 # Demo
 
-[<img src="https://img.youtube.com/vi/7LLAEY3cwOY/maxresdefault.jpg" width="50%">](https://youtu.be/7LLAEY3cwOY)
+![Alt Text](demo.gif)
 
 # Directory-Structure
 ```bash
