@@ -38,8 +38,8 @@ This is a web application for a barbershop. The frontend is built with pure HTML
 # Dependencies
 Before you begin, ensure that you have the following installed on your machine:
 
-PostgreSQL
-NodeJS
+- PostgreSQL
+- NodeJS
 
 # Build-Instructions
 Follow the instructions below to set up and run the application:
